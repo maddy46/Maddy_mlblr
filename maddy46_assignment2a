@@ -9,3 +9,53 @@ def quicksort(eip):
 
 print(quicksort([3,6,8,10,1,2,1]))
 # Prints "[1, 1, 2, 3, 6, 8, 10]"
+
+
+eip_list = 3
+print(type(eip_list)) # Prints "<class 'int'>"
+print(eip_list)       # Prints "3"
+print(eip_list + 1)   # Addition; prints "4"
+print(eip_list - 1)   # Subtraction; prints "2"
+print(eip_list * 2)   # Multiplication; prints "6"
+print(eip_list ** 2)  # Eeip_listponentiation; prints "9"
+eip_list += 1
+print(eip_list)  # Prints "4"
+eip_list *= 2
+print(eip_list)  # Prints "8"
+eip_dict = 2.5
+print(type(eip_dict)) # Prints "<class 'float'>"
+print(eip_dict, eip_dict + 1, eip_dict * 2, eip_dict ** 2) # Prints "2.5 3.5 5.0 6.25"
+
+eip_in = True
+eip_out = False
+print(type(eip_in)) # Prints "<class 'bool'>"
+print(eip_in and eip_out) # Logical AND; prints "False"
+print(eip_in or eip_out)  # Logical OR; prints "True"
+print(not eip_in)   # Logical NOT; prints "False"
+print(eip_in != eip_out)  # Logical XOR; prints "True"
+
+
+
+Strings: Python has great support for strings:
+
+eip_in = 'hello'    # String literals can use single quotes
+eip_out = "world"    # or double quotes; it does not matter.
+print(eip_in)       # Prints "hello"
+print(len(eip_in))  # String length; prints "5"
+eip = eip_in + ' ' + eip_out  # String concatenation
+print(eip)  # prints "hello world"
+eip12 = '%s %s %d' % (eip_in, eip_out, 12)  # sprintf style string formatting
+print(eip12)  # prints "hello world 12"
+
+
+
+String objects have a bunch of useful methods; for example:
+
+eip = "hello"
+print(eip.capitalize())  # Capitalize a string; prints "Hello"
+print(eip.upper())       # Convert a string to uppercase; prints "HELLO"
+print(eip.rjust(7))      # Right-justify a string, padding with spaces; prints "  hello"
+print(eip.center(7))     # Center a string, padding with spaces; prints " hello "
+print(eip.replace('l', '(ell)'))  # Replace all instances of one substring with another;
+                                # prints "he(ell)(ell)o"
+print('  world '.strip())  # Strip leading and trailing whitespace; prints "world"
